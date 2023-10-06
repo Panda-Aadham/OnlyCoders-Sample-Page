@@ -1,15 +1,16 @@
-.dropdown {
-    position: relative;
-    top: 0%;
-    height: 100%;
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: #fff;
 }
 
-.dropdown-menu {
-    width: 18vh;
-    position: absolute;
-    top: 82%;
-    left: -30%;
-    list-style: none;
+ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
 }
 
 .dropdown-menu li {
@@ -29,21 +30,10 @@
     font-family: 'Signika Negative', sans-serif;
     background-color: #5d5df5;
     color: #fff;
-    align-self: flex-end;
-    font-size: 15px;
+    font-size: 1vw;
     padding: 16px;
-    display: block;
     cursor: pointer;
     border: none;
-    height: 100%;
-    width: 100%;
-}
-
-.dropdown-caret {
-    position: absolute;
-    top: 4.4vh;
-    left: 13.6vh;
-    color: #fff;
 }
 
 .dropdown-item:hover {

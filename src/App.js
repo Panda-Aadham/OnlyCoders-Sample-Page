@@ -1,5 +1,4 @@
 import Header from './components/Header/Header.tsx'
-import './global.css';
 
 function App() {
   return (
