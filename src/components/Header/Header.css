@@ -1,9 +1,16 @@
-.nav {
+.nav{
   background-color: #5d5df5;
   display: flex;
   align-items: center;
   min-height: 55px;
   height: 10vh;
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-branding {
@@ -16,15 +23,12 @@
   width: 70%;
   padding: 15px;
 }
-.nav-menu-btn {
-  color: #ffff;  
-}
 
 .nav-buttons {
   position: relative;
   display: flex;
   align-items: center;
-  height: 12vh;
+  height: 100%;
   width: 20vw;
 }
 
@@ -33,6 +37,7 @@
   display: flex;
   justify-content: center;
   width: 50vw;
+  height: 50%;
 }
 
 .nav-login {
@@ -45,6 +50,7 @@
 }
 
 .grid-icon {
+  display: contents;
   color: #7e7df9;
   margin-right: 15px;
 }
@@ -54,6 +60,7 @@
   font-family: 'Signika Negative', sans-serif;
   font-size: 1vw;
   width: 18vw;
+  height: 100%;
   background-color: #5d5df5;
   color: #fff;
   border: none;
@@ -81,7 +88,7 @@
   background-color: #00d2e0;
   color: #fff;
   width: 45%;
-  height: 100%;
+  height: 5vh;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -92,9 +99,88 @@
   background-color: #00939d;
 }
 
+.nav-menu {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .header {
-      background-color: #555;
-      padding: 10px;
+  .nav {
+    background-color: #5d5df5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    min-height: 55px;
+    height: 10vh;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 2vw;
+    order: 2;
+  }
+
+  .nav-menu-btn {
+    justify-self:center;
+    color: #ffff;
+  }
+
+  .nav-logo {
+    width: 28vw;
+  }
+
+  .nav-container.active {
+    position: relative;
+    display: grid;
+    justify-content: start;
+    background-color: #000000;
+    grid-column: 1 / span 2; 
+    width: 100%;
+    top: 0%;
+  }
+
+  .nav-search {
+    position: relative;
+    width: 200%;
+  }
+
+  .nav-buttons {
+    position: relative;
+    display: grid;
+    height: 100%;
+    width: 200%;
+    order: 1;
+  }
+
+  .nav-button {
+    width: 100%;
+    border-width: 2px;
+    border-color: #4b4ac4;
+  }
+
+  .nav-login {
+    position: relative;
+    order: 2;
+    height: auto;
+    width: 200%;
+    margin-right: 0;
+  }
+
+  .nav-login-btn {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1vw;
+    justify-content: center;
+    margin-right: 0;
+    background-color: #00d2e0;
+    color: #fff;
+    width: 100%;
+    height: 6vh;
+    border: none;
+    border-radius: 0;
   }
 }

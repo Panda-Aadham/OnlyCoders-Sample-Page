@@ -32,11 +32,12 @@ const Header = () => {
           <img className="nav-logo" src={process.env.PUBLIC_URL + '/images/logo.png'} alt="company logo" />
           <GridViewIcon className="grid-icon" />
         </li>
-        <div className='menu-icon' onClick={handleClick}>
-          {openMobileMenu ? <MenuIcon className="nav-menu-btn"/> 
-          : <CloseIcon className="nav-menu-btn"/>}
+        <div className="nav-menu" onClick={handleClick}>
+          {openMobileMenu ? <CloseIcon className="nav-menu-btn"/> 
+          : <MenuIcon className= 'nav-menu-btn'/>}
         </div>
-        <li className="nav-buttons">
+        <div className={`nav-container ${openMobileMenu && 'active'}`}>
+          <li className='nav-buttons'>
           <Button variant="primary" type="submit" className="nav-button">Home</Button>
           <Button
             variant="primary"
@@ -60,13 +61,14 @@ const Header = () => {
             <KeyboardArrowDownIcon className='dropdown-caret'/>
             <DropdownMenu isOpen={hoverOnMore} items={moreItems} />
           </Button>
-        </li>
-        <li className="nav-search">
-          <Searchbar />
-        </li>
-        <li className="nav-login">
-          <Button variant="primary" type="submit" className="nav-login-btn">Login</Button>
-        </li>
+          </li>
+          <li className='nav-search'>
+            <Searchbar />
+          </li>
+          <li className='nav-login'>
+            <Button variant="primary" type="submit" className="nav-login-btn">Login</Button>
+          </li>
+        </div>
       </ul>
     </Navbar>
   )
