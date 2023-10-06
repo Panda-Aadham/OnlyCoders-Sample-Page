@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import DropdownMenu from './Dropdown/DropdownMenu.tsx';
 import Searchbar from "./Searchbar/Searchbar.tsx";
-import { Navbar, Button, Row, Col } from 'react-bootstrap';
+import { Navbar, Button } from 'react-bootstrap';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import GridViewIcon from '@mui/icons-material/GridView';
-import { CSSTransition } from 'react-transition-group';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { featureItems, moreItems } from "./Dropdown/dropdownItems.tsx";
 import "./Header.css";
@@ -11,30 +12,40 @@ import "./Header.css";
 const Header = () => {
   const [hoverOnFeature, setHoverOnFeature] = useState(false);
   const [hoverOnMore, setHoverOnMore] = useState(false);
+  const [openMobileMenu, setOpenMobileMenu] = useState(false)
 
-  const onMouseEnter = (setOpen: (arg0: boolean) => void) => {
+  const handleMouseEnter = (setOpen: (arg0: boolean) => void) => {
     setOpen(true);
   };
 
-  const onMouseLeave = (setOpen: (arg0: boolean) => void) => {
+  const handleMouseLeave = (setOpen: (arg0: boolean) => void) => {
     setOpen(false);
   };
+  const handleClick = () => {
+    setOpenMobileMenu(!openMobileMenu)
+  }
   
   return (
     <Navbar fixed="top">
-      <Row className="nav">
-        <Col className="nav-menu">
-          <img className="logo" src={process.env.PUBLIC_URL + '/images/logo.png'} alt="company logo" />
+      <ul className={openMobileMenu ? "nav active" : "nav"} >
+        <li className="nav-branding">
+          <img className="nav-logo" src={process.env.PUBLIC_URL + '/images/logo.png'} alt="company logo" />
           <GridViewIcon className="grid-icon" />
+        </li>
+        <div className='menu-icon' onClick={handleClick}>
+          {openMobileMenu ? <MenuIcon className="nav-menu-btn"/> 
+          : <CloseIcon className="nav-menu-btn"/>}
+        </div>
+        <li className="nav-buttons">
           <Button variant="primary" type="submit" className="nav-button">Home</Button>
           <Button
             variant="primary"
             type="submit"
             className="nav-button"
-            onMouseEnter={() => {onMouseEnter(setHoverOnFeature)}}
-            onMouseLeave={() => {onMouseLeave(setHoverOnFeature)}}
+            onMouseEnter={() => {handleMouseEnter(setHoverOnFeature)}}
+            onMouseLeave={() => {handleMouseLeave(setHoverOnFeature)}}
             >
-            Features
+            {featureItems.label}
             <KeyboardArrowDownIcon className='dropdown-caret'/>
             <DropdownMenu isOpen={hoverOnFeature} items={featureItems}/>
           </Button>
@@ -42,19 +53,21 @@ const Header = () => {
             variant="primary"
             type="submit"
             className="nav-button"
-            onMouseEnter={() => {onMouseEnter(setHoverOnMore)}}
-            onMouseLeave={() => {onMouseLeave(setHoverOnMore)}}
+            onMouseEnter={() => {handleMouseEnter(setHoverOnMore)}}
+            onMouseLeave={() => {handleMouseLeave(setHoverOnMore)}}
             >
-            More
+            {moreItems.label}
             <KeyboardArrowDownIcon className='dropdown-caret'/>
             <DropdownMenu isOpen={hoverOnMore} items={moreItems} />
           </Button>
-        </Col>
-        <Col className="nav-secondary">
+        </li>
+        <li className="nav-search">
           <Searchbar />
-          <Button variant="primary" type="submit" className="nav-login">Login</Button>
-        </Col>
-      </Row>
+        </li>
+        <li className="nav-login">
+          <Button variant="primary" type="submit" className="nav-login-btn">Login</Button>
+        </li>
+      </ul>
     </Navbar>
   )
 }
