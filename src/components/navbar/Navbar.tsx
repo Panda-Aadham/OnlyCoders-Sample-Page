@@ -27,7 +27,7 @@ const Navbar = () => {
   
   return (
     <div>
-      <ul className={openMobileMenu ? "nav active" : "nav"} >
+      <ul className="nav" >
         <li className="nav-branding">
           <img className="nav-logo" src={process.env.PUBLIC_URL + '/images/logo.png'} alt="company logo" />
           <GridViewIcon className="grid-icon" />
