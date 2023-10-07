@@ -5,15 +5,18 @@
     left: 0%;
     width: 100%;
     background-color: #fff;
+    z-index: 3;
 }
 
 ul {
     margin-block-start: 0em;
     margin-block-end: 0em;
     padding-inline-start: 0px;
+    list-style: none;
 }
 
 .dropdown-menu li {
+    position: relative;
     background: #5d5df5;
     cursor: pointer;
 }
@@ -27,6 +30,7 @@ ul {
 }
 
 .dropdown-item {
+    position: relative;
     font-family: 'Signika Negative', sans-serif;
     background-color: #5d5df5;
     color: #fff;
@@ -34,6 +38,7 @@ ul {
     padding: 16px;
     cursor: pointer;
     border: none;
+    z-index: 3;
 }
 
 .dropdown-item:hover {
@@ -44,5 +49,9 @@ ul {
     header {
         background-color: #555;
         padding: 10px;
+    }
+
+    .dropdown-item {
+        z-index: 3;
     }
 }

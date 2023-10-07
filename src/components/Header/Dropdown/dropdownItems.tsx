@@ -1,6 +1,5 @@
 export const featureItems =  {
     label: 'Features',
-    id: 'features-dropdown',
     elements: [
         {
             title: 'Design',
@@ -19,7 +18,6 @@ export const featureItems =  {
 
 export const moreItems =  {
     label: 'More',
-    id: 'more-dropdown',
     elements: [
         {
             title: 'Our mission',

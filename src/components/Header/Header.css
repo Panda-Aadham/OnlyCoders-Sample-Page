@@ -103,8 +103,14 @@
   display: none;
 }
 
+.nav-dropdown {
+  position: relative;
+  z-index: 9990;
+}
+
 @media screen and (max-width: 768px) {
   .nav {
+    position: relative;
     background-color: #5d5df5;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -119,10 +125,10 @@
   }
 
   .nav-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-right: 2vw;
-    order: 2;
+    display: flex;
+    justify-content: right;
+    padding-right: 4vw;
+    order: 1;
   }
 
   .nav-menu-btn {
@@ -136,44 +142,54 @@
 
   .nav-container.active {
     position: relative;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: start;
-    background-color: #000000;
-    grid-column: 1 / span 2; 
+    background-color: #5d5df5;
+    grid-column: 1 / span 2;
     width: 100%;
-    top: 0%;
+    order: 2;
   }
 
   .nav-search {
-    position: relative;
-    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    justify-self: center;
+    margin-bottom: 2.5vh;
   }
 
   .nav-buttons {
-    position: relative;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     height: 100%;
-    width: 200%;
+    width: 100%;
     order: 1;
   }
 
   .nav-button {
     width: 100%;
+    font-size: 2vh;
     border-width: 2px;
     border-color: #4b4ac4;
+    z-index: 1;
   }
 
   .nav-login {
+    display: flex; /* Make the Login div a flex container */
+    justify-content: space-between;
     position: relative;
     order: 2;
     height: auto;
-    width: 200%;
-    margin-right: 0;
+    width: 100%;
+    z-index: 2;
   }
 
   .nav-login-btn {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 1vw;
+    font-size: 2vh;
     justify-content: center;
     margin-right: 0;
     background-color: #00d2e0;
@@ -181,6 +197,5 @@
     width: 100%;
     height: 6vh;
     border: none;
-    border-radius: 0;
   }
 }

@@ -36,7 +36,7 @@ const Header = () => {
           {openMobileMenu ? <CloseIcon className="nav-menu-btn"/> 
           : <MenuIcon className= 'nav-menu-btn'/>}
         </div>
-        <div className={`nav-container ${openMobileMenu && 'active'}`}>
+        <div className={openMobileMenu ? 'nav-container active' : 'nav-container'}>
           <li className='nav-buttons'>
           <Button variant="primary" type="submit" className="nav-button">Home</Button>
           <Button
@@ -48,7 +48,7 @@ const Header = () => {
             >
             {featureItems.label}
             <KeyboardArrowDownIcon className='dropdown-caret'/>
-            <DropdownMenu isOpen={hoverOnFeature} items={featureItems}/>
+            <DropdownMenu isOpen={hoverOnFeature} elements={featureItems.elements}/>
           </Button>
           <Button
             variant="primary"
@@ -59,15 +59,18 @@ const Header = () => {
             >
             {moreItems.label}
             <KeyboardArrowDownIcon className='dropdown-caret'/>
-            <DropdownMenu isOpen={hoverOnMore} items={moreItems} />
+            <DropdownMenu isOpen={hoverOnMore} elements={moreItems.elements} />
           </Button>
+          {openMobileMenu && <li className='nav-login'>
+            <Button variant="primary" type="submit" className="nav-login-btn">Login</Button>
+          </li>}
           </li>
           <li className='nav-search'>
             <Searchbar />
           </li>
-          <li className='nav-login'>
+           {!openMobileMenu && <li className='nav-login'>
             <Button variant="primary" type="submit" className="nav-login-btn">Login</Button>
-          </li>
+          </li>}
         </div>
       </ul>
     </Navbar>

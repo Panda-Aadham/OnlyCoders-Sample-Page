@@ -40,9 +40,18 @@
   color: #ffff;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .searchbar {
-      width: 30vw;
-      min-width: 50px;
+    justify-content: center;
+    width: 100%;
+    height: 4vh;
+  }
+
+  .search-textfield {
+    height: 80%;
+  }
+
+  .search-submit {
+    height: 137%;
   }
 }
