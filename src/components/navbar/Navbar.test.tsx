@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import Header from './Header.tsx';
+import Navbar from './Navbar.tsx';
 import React from 'react';
 
 test('test all items appear', () => {
-    render(<Header />);
+    render(<Navbar />);
     expect(document.getElementsByClassName('logo')).not.toBeNull();
     expect(document.getElementsByClassName('nav-button')).toHaveLength(3);
     expect(screen.queryByText(/Features/)).toBeInTheDocument();

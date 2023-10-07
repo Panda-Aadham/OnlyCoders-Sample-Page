@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import DropdownMenu from './Dropdown/DropdownMenu.tsx';
 import Searchbar from "./Searchbar/Searchbar.tsx";
-import { Navbar, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import GridViewIcon from '@mui/icons-material/GridView';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { featureItems, moreItems } from "./Dropdown/dropdownItems.tsx";
-import "./Header.css";
+import "./Navbar.css";
 
-const Header = () => {
+const Navbar = () => {
   const [hoverOnFeature, setHoverOnFeature] = useState(false);
   const [hoverOnMore, setHoverOnMore] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false)
@@ -26,7 +26,7 @@ const Header = () => {
   }
   
   return (
-    <Navbar fixed="top">
+    <div>
       <ul className={openMobileMenu ? "nav active" : "nav"} >
         <li className="nav-branding">
           <img className="nav-logo" src={process.env.PUBLIC_URL + '/images/logo.png'} alt="company logo" />
@@ -73,8 +73,8 @@ const Header = () => {
           </li>}
         </div>
       </ul>
-    </Navbar>
+    </div>
   )
 }
 
-export default Header
+export default Navbar
