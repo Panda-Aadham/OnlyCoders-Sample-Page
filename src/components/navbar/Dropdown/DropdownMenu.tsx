@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
 import './DropdownMenu.css';
 
 const DropdownMenu = (props: {isOpen: boolean, elements: {path: string, title: string}[]}) => {
@@ -15,13 +14,13 @@ const DropdownMenu = (props: {isOpen: boolean, elements: {path: string, title: s
       {isOpen && elements.map((item: { path: string; title: string; }, index: number) => {
         return (
           <li key={index}>
-            <Button
+            <button
               className="dropdown-item"
               // to={item.path}
               onClick={() => setClick(false)}
             >
               {item.title}
-            </Button>
+            </button>
           </li>
         );
       })}

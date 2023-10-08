@@ -1,0 +1,47 @@
+.feed {
+    height: 100vh;
+    width: 100%;
+    background-color: #f8f8fb;
+    display: flex;
+    padding-top: 3vh;
+    padding-left: 4vw;
+}
+
+.feed-grid {
+    display: flexbox;
+    margin-inline: 17%
+}
+
+Row {
+    display: flex;
+}
+
+.feed-col {
+    width: 33%;
+}
+
+.feed-image {
+    width: 100%;
+}
+
+.box {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+.red {
+    background-color: red;
+}
+  
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+  

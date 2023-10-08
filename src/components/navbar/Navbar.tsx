@@ -38,8 +38,8 @@ const Navbar = () => {
       </div>
       <div className={openMobileMenu ? 'nav-container active' : 'nav-container'}>
         <li className='nav-buttons'>
-        <Button type="submit" className="nav-button">Home</Button>
-        <Button
+        <button type="submit" className="nav-button">Home</button>
+        <button
           type="submit"
           className="nav-button"
           onMouseEnter={() => {handleMouseEnter(setHoverOnFeature)}}
@@ -48,8 +48,8 @@ const Navbar = () => {
           {featureItems.label}
           <KeyboardArrowDownIcon className='dropdown-caret'/>
           <DropdownMenu isOpen={hoverOnFeature} elements={featureItems.elements}/>
-        </Button>
-        <Button
+        </button>
+        <button
           type="submit"
           className="nav-button"
           onMouseEnter={() => {handleMouseEnter(setHoverOnMore)}}
@@ -58,16 +58,16 @@ const Navbar = () => {
           {moreItems.label}
           <KeyboardArrowDownIcon className='dropdown-caret'/>
           <DropdownMenu isOpen={hoverOnMore} elements={moreItems.elements} />
-        </Button>
+        </button>
         {openMobileMenu && <li className='nav-login'>
-          <Button type="submit" className="nav-login-btn">Login</Button>
+          <button type="submit" className="nav-login-btn">Login</button>
         </li>}
         </li>
         <li className='nav-search'>
           <Searchbar />
         </li>
           {!openMobileMenu && <li className='nav-login'>
-          <Button type="submit" className="nav-login-btn">Login</Button>
+          <button type="submit" className="nav-login-btn">Login</button>
         </li>}
       </div>
     </ul>

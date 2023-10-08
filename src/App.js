@@ -1,12 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar.tsx'
 import Home from './pages/Home/Home.tsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
       <Home />
       <Router>
         <Routes>
