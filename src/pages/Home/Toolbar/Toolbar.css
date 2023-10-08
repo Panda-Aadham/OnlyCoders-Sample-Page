@@ -1,0 +1,42 @@
+.tool-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 7px;
+    top: 10vh;
+    left: 0;
+    width: 3.5vw;
+    height: 100%;
+    min-width: 40px;
+    background-color: #ffffff;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tool-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    aspect-ratio: 1/1;
+    border-radius: 7px;
+    margin: 7px;
+    align-items: center;
+    background-color: #ffff;
+    color: #abaec7;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tool-btn.selected {
+    background-color: #00d2e0;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(25, 128, 202, 0.35); 
+}
+
+@media screen and (max-height: 768px) {
+    .vertical-bar {
+        top: 75px;
+    }
+}

@@ -1,9 +1,18 @@
-import Navbar from './components/navbar/Navbar.tsx'
+import React from 'react';
+import Navbar from './components/Navbar/Navbar.tsx'
+import Home from './pages/Home/Home.tsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Home />
+      <Router>
+        <Routes>
+          <Route path="/home" component={Home} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,9 +1,11 @@
 .nav{
   background-color: #5d5df5;
   display: flex;
+  width: 100%;
   align-items: center;
   min-height: 75px;
   height: 10vh;
+  z-index: 5;
 }
 
 .nav-container {
@@ -11,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .nav-branding {
@@ -59,7 +62,7 @@
   position: relative;
   font-family: 'Signika Negative', sans-serif;
   font-size: 1vw;
-  width: 18vw;
+  width: 100%;
   height: 100%;
   background-color: #5d5df5;
   color: #fff;
@@ -82,8 +85,7 @@
 .nav-login-btn {
   font-family: 'Signika Negative', sans-serif;
   font-size: 1vw;
-  margin-left: auto;
-  margin-right: 1vw;
+  margin-inline: 1vw;
   justify-content: center;
   background-color: #00d2e0;
   color: #fff;
@@ -111,11 +113,9 @@
 @media screen and (max-width: 768px) {
   .nav {
     position: relative;
-    background-color: #5d5df5;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    align-items: center;
   }
 
   .nav-container {
@@ -156,7 +156,7 @@
     width: 100%;
     height: 7vh;
     justify-self: center;
-    margin-bottom: 2.5vh;
+    margin-bottom: 1vh;
   }
 
   .nav-buttons {
@@ -186,14 +186,8 @@
   }
 
   .nav-login-btn {
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 2vh;
-    justify-content: center;
-    margin-right: 0;
-    margin-left: 0;
-    background-color: #00d2e0;
-    color: #fff;
     width: 100%;
+    font-size: 2vh;
     height: 6vh;
     border: none;
   }
