@@ -107,7 +107,6 @@
 
 .nav-dropdown {
   position: relative;
-  z-index: 9990;
 }
 
 @media screen and (max-width: 768px) {
@@ -172,7 +171,6 @@
     font-size: 2vh;
     border-width: 2px;
     border-color: #4b4ac4;
-    z-index: 1;
   }
 
   .nav-login {
@@ -182,7 +180,6 @@
     order: 2;
     height: auto;
     width: 100%;
-    z-index: 2;
   }
 
   .nav-login-btn {
