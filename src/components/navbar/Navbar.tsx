@@ -3,8 +3,8 @@ import Searchbar from "./Searchbar/Searchbar.tsx";
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import "./Navbar.css";
 import NavButtons from "./NavButtons/NavButtons.tsx";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false)
@@ -15,8 +15,13 @@ const Navbar = () => {
   
   return (
     <div className="nav">
-      <img className="nav-logo" src={process.env.PUBLIC_URL + '/images/logo.png'} alt="company logo" />
-      <Container className="nav-container">
+      <div className="nav-top">
+        <img className="nav-logo" src={process.env.PUBLIC_URL + '/images/logo.png'} alt="company logo" />
+        <button onClick={handleClick} className="nav-menu">
+          {openMobileMenu ? <CloseIcon className="nav-menu-btn"/> : <MenuIcon className="nav-menu-btn"/>}
+        </button>
+      </div>
+      <Container className={openMobileMenu ? "nav-container active" : "nav-container"}>
         <Row className="nav-row" style={{ height: "100%"}} >
           <Col className="nav-items col-md-3 col-sm-2">
             <NavButtons />

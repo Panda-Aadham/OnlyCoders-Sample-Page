@@ -9,15 +9,28 @@
   z-index: 5;
 }
 
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: fit-content;
+  height: 100%;
+}
+
 .nav-container {
   position: relative;
   flex: 1;
   height: 100%;
+  margin-inline:0;
 }
 
 .nav-logo {
   height: 80%;
   padding: 6px;
+}
+
+.nav-items {
+  padding-left: 0;
 }
 
 .nav-search {
@@ -32,7 +45,7 @@
   margin-left: auto;
   position: relative;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
   margin-inline: 1%;
@@ -60,17 +73,18 @@
   display: none;
 }
 
-.nav-dropdown {
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .nav {
-    position: relative;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .nav-container {
@@ -78,73 +92,12 @@
   }
 
   .nav-menu {
-    display: flex;
-    float: right;
-    justify-content: flex-end;
-    justify-self: end;
-    padding-right: 4vw;
-    order: 1;
-    grid-column: 2 / span 1;
-  }
-
-  .nav-menu-btn {
-    justify-self:center;
+    display: contents;
     color: #ffff;
   }
 
-  .nav-logo {
-    width: 28vw;
+  .nav-menu-btn {
+    margin-right: 3vw;
   }
 
-  .nav-container.active {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    background-color: #5d5df5;
-    grid-column: 1 / span 2;
-    width: 100%;
-    order: 2;
-  }
-
-  .nav-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 7vh;
-    justify-self: center;
-    margin-bottom: 1vh;
-  }
-
-  .nav-buttons {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    order: 1;
-  }
-
-  .nav-button {
-    width: 100%;
-    font-size: 2vh;
-    border-width: 2px;
-    border-color: #4b4ac4;
-  }
-
-  .nav-login {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    order: 2;
-    height: auto;
-    width: 100%;
-  }
-
-  .nav-login-btn {
-    width: 100%;
-    font-size: 2vh;
-    height: 6vh;
-    border: none;
-  }
 }

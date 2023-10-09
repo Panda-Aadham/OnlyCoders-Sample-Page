@@ -22,7 +22,7 @@ const NavButtons = () => {
     <Button type="submit" className="nav-button">Home</Button>
     <Button
       type="submit"
-      className="nav-button"
+      className="nav-button nav-dropdown"
       onMouseEnter={() => {handleMouseEnter(setHoverOnFeature)}}
       onMouseLeave={() => {handleMouseLeave(setHoverOnFeature)}}
     >
@@ -32,7 +32,7 @@ const NavButtons = () => {
     </Button>
     <Button
       type="submit"
-      className="nav-button"
+      className="nav-button nav-dropdown"
       onMouseEnter={() => {handleMouseEnter(setHoverOnMore)}}
       onMouseLeave={() => {handleMouseLeave(setHoverOnMore)}}
     >
