@@ -1,9 +1,9 @@
 .nav{
   background-color: #5d5df5;
   display: flex;
+  align-items: center;
   flex-direction: row;
   width: 100%;
-  align-items: center;
   min-height: 75px;
   height: 10vh;
   z-index: 5;
@@ -11,38 +11,21 @@
 
 .nav-container {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1;
   height: 100%;
-  width: 85%;
-}
-
-.nav-branding {
-  align-items: center;
-  display: flex;
-  width: 15%;
 }
 
 .nav-logo {
-  width: 70%;
-  padding: 15px;
-}
-
-.nav-buttons {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 20vw;
+  height: 80%;
+  padding: 6px;
 }
 
 .nav-search {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 50vw;
-  height: 50%;
+  align-items: center;
+  max-width: 60%;
 }
 
 .nav-login {
@@ -50,54 +33,23 @@
   position: relative;
   display: flex;
   justify-content: right;
-  height: 50%;
-  margin-inline: 1vw;
-  width: 14%;
-}
-
-.grid-icon {
-  display: contents;
-  color: #7e7df9;
-  margin-right: 15px;
-}
-
-.nav-button {
-  position: relative;
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 1vw;
-  width: 100%;
+  align-items: center;
   height: 100%;
-  background-color: #5d5df5;
-  color: #fff;
-  border: none;
-  padding: 25px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.nav-button:hover {
-  background-color: #4b4ac4;
-}
-
-.dropdown-caret {
-  position: absolute;
-  top: 37%;
-  color: #fff;
+  margin-inline: 1%;
+  width: 14%;
 }
 
 .nav-login-btn {
   font-family: 'Signika Negative', sans-serif;
   font-size: 1vw;
-  margin-inline: 1vw;
   justify-content: center;
   background-color: #00d2e0;
   color: #fff;
   width: 45%;
-  height: 5vh;
+  min-width: 50px;
+  height: 50%;
   border: none;
   border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .nav-login-btn:hover {
@@ -115,6 +67,7 @@
 @media screen and (max-width: 768px) {
   .nav {
     position: relative;
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -126,9 +79,12 @@
 
   .nav-menu {
     display: flex;
-    justify-content: right;
+    float: right;
+    justify-content: flex-end;
+    justify-self: end;
     padding-right: 4vw;
     order: 1;
+    grid-column: 2 / span 1;
   }
 
   .nav-menu-btn {
