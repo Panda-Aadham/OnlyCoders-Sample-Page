@@ -21,19 +21,19 @@ const Navbar = () => {
           {openMobileMenu ? <CloseIcon className="nav-menu-btn"/> : <MenuIcon className="nav-menu-btn"/>}
         </button>
       </div>
-      <Container className={openMobileMenu ? "nav-container active" : "nav-container"}>
-        <Row className="nav-row" style={{ height: "100%"}} >
-          <Col className="nav-items col-md-3 col-sm-2">
+      <div className={`nav-container ${openMobileMenu ? "active" : "container"}`}>
+        <div className={openMobileMenu ? "nav-row" : "nav-row row"} style={{ height: "100%"}} >
+          <div className={openMobileMenu ? "nav-items" : "nav-items col-md-3 col-sm-2"}>
             <NavButtons />
-          </Col>
-          <Col className="nav-search col-md-7 col-sm-9">
+          </div>
+          <div className={openMobileMenu ? "nav-search" : "nav-search col-md-7 col-sm-9"}>
             <Searchbar />
-          </Col>
-          <Col className="col-md-2 col-sm-1 nav-login">
+          </div>
+          <div className={openMobileMenu ? "nav-login" : "nav-login col-md-2 col-sm-1"}>
             <Button type="submit" className="nav-login-btn">Login</Button>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

@@ -10,10 +10,10 @@ const Home = () => {
     return (
     <div className="home-container">
       <Navbar />
-      {/* <div className="home-content">
+      <div className="home-content">
         <Toolbar selectedIcon={0}/>
         <Newsfeed />
-      </div> */}
+      </div>
     </div>
     )
 }
