@@ -130,4 +130,15 @@
     margin-block: 15px;
     width: 100%;
   }
+
+  .nav-login {
+    width: 100%;
+  }
+
+  .nav-login-btn {
+    height: 6vh;
+    width: 100%;
+    border-radius: 0;
+    font-size: 2vh;
+  }
 }
