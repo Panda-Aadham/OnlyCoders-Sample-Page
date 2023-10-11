@@ -1,6 +1,7 @@
 import React from "react";
-import "./Newsfeed.css"
 import { Col, Container, Row } from "react-bootstrap";
+import "./Newsfeed.css"
+import NewUsers from "./NewUsers";
 
 const Newsfeed = () => {
     return(
@@ -9,32 +10,20 @@ const Newsfeed = () => {
                 <Row>
                     <img className="feed-image" src={process.env.PUBLIC_URL + '/images/newsfeed.png'} alt="newsfeed picture" />
                 </Row>
-                <div className="row">
-                    <div className="col-md-3">
-                    <div className="box red">Red Box</div>
-                    </div>
-                    <div className="col-md-6">
-                    <div className="box green">Green Box</div>
-                    </div>
-                    <div className="col-md-3">
-                    <div className="box blue">Blue Box</div>
-                    </div>
-                </div>
+                <Row>
+                    <Col className="col-md-3">
+                        <NewUsers/>
+                        {/* <div className="box red">Red Box</div> */}
+                    </Col>
+                    <Col className="col-md-6">
+                        <div className="box green">Green Box</div>
+                    </Col>
+                    <Col className="col-md-3">
+                        <div className="box blue">Blue Box</div>
+                    </Col>
+                </Row>
             </Container>
         </div>
-        // <div className="container">
-        //     <div className="row">
-        //         <div className="col-md-3">
-        //         <div className="box red">Red Box</div>
-        //         </div>
-        //         <div className="col-md-6">
-        //         <div className="box green">Green Box</div>
-        //         </div>
-        //         <div className="col-md-3">
-        //         <div className="box blue">Blue Box</div>
-        //         </div>
-        //     </div>
-        // </div>
     )
 }
 
