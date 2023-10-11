@@ -22,7 +22,7 @@ const Navbar = () => {
         </button>
       </div>
       <div className={`nav-container ${openMobileMenu ? "active" : "container"}`}>
-        <div className={openMobileMenu ? "nav-row" : "nav-row row"} style={{ height: "100%"}} >
+        <div className={openMobileMenu ? "nav-rows" : "nav-rows row"} style={{ height: "100%"}} >
           <div className={openMobileMenu ? "nav-items" : "nav-items col-md-3 col-sm-2"}>
             <NavButtons />
           </div>

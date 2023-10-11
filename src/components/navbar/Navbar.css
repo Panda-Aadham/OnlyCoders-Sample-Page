@@ -113,14 +113,21 @@
     width: 100%;
   }
 
-  .nav-row {
+  .nav-rows {
     display: grid;
-    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto; 
+    grid-template-columns: 1fr;
     width: 100%;
-    justify-content: center;
+    justify-items: center;
   }
 
   .nav-search {
     grid-row: 1;
+    width: 80%;
+  }
+
+  .nav-items {
+    margin-block: 15px;
+    width: 100%;
   }
 }

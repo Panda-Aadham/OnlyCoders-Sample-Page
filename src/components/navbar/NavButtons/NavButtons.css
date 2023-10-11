@@ -36,3 +36,31 @@
     margin-left: 20%;
     top: 45%;
 }
+
+@media screen and (max-width: 960px) {
+    .nav-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav-button {
+        width: 100%;
+        flex: 1;
+        height: 6vh;
+        font-size: 2vh;
+    }
+
+    .nav-dropdown {
+        text-indent: 0%;
+    }
+    
+    .dropdown-caret {
+        position: absolute;
+        height: 5vh;
+        top: 35%;
+        left: 40%;
+    }
+}
