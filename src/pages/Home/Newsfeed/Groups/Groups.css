@@ -1,15 +1,15 @@
-.nu-card {
+.groups-card {
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(6, 6, 6, 0.05);
     padding-block-end: 10px;
 }
 
-.nu-card-title {
+.groups-card-title {
     padding-bottom: 5px;
 }
 
-.nu-title {
+.groups-title {
     font-family: 'Signika Negative', sans-serif;
     font-size: 2.2vh;
     font-weight: bold;

@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import Profile from "../../../../components/User/User.tsx";
 import "./NewUsers.css"
 
-// Custom component for newest members section of feed
+// Custom component for "Newest Members" section of feed
 const NewUsers = () => {
     const user = {
         name: "Adam Ahmad",
@@ -18,7 +18,7 @@ const NewUsers = () => {
     return (
     <Card className="nu-card">
         <Card.Body className="nu-card-title">
-            <Card.Title className="nu-title" style={{fontSize: "2vh"}}>Newest Members</Card.Title>
+            <Card.Title className="nu-title">Newest Members</Card.Title>
         </Card.Body>
         <Profile user={user}/>
         <Profile user={user}/>

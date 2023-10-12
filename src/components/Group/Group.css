@@ -1,0 +1,42 @@
+.group-container {
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.group-container:hover {
+    background-color: #ccfbff;
+}
+  
+.group-icon {
+    width: 20%;
+    margin: 3%;
+    margin-left: 10%;
+  }
+  
+.group-icon img {
+    width: 100%;
+    height: auto;
+}
+  
+.group-text { 
+    font-family: 'Signika Negative', sans-serif;
+    padding: 10px;
+}
+  
+.group-name {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.group-members {
+    font-size: 60%;
+}
+
+.group-privacy {
+    color: #cdcedd;
+    margin-left: auto;
+    margin-right: 8%;
+}

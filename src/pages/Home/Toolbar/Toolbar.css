@@ -60,10 +60,3 @@
         aspect-ratio: 1/1;
     }
 }
-
-/* To limit top positioning of toolbar */
-/* @media screen and (max-height: 768px) {
-    .tool-bar {
-        top: 75px;
-    }
-} */

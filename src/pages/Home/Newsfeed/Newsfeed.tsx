@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Newsfeed.css"
 import NewUsers from "./NewUsers/NewUsers";
+import Groups from "./Groups/Groups";
 
 const Newsfeed = () => {
     return(
@@ -19,7 +20,8 @@ const Newsfeed = () => {
                         <div className="box green">Green Box</div>
                     </Col>
                     <Col className="col-md-3">
-                        <div className="box blue">Blue Box</div>
+                        <Groups/>
+                        {/* <div className="box blue">Blue Box</div> */}
                     </Col>
                 </Row>
             </Container>
