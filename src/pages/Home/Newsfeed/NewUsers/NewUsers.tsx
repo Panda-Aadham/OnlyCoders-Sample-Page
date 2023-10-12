@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Profile from "../../../components/User/User";
+import Profile from "../../../../components/User/User.tsx";
 import "./NewUsers.css"
 
 // Custom component for newest members section of feed
@@ -10,7 +10,7 @@ const NewUsers = () => {
         username: "FredJamalIII",
         profilePicture: process.env.PUBLIC_URL + '/images/profile.png',
         verified: true,
-        proUser: true,
+        proUser: false,
         level: 6,
         uuid: "12388b30-3547-4ba7-bbc6-ca321f52cb51"
     }

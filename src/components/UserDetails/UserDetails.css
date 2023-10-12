@@ -1,0 +1,20 @@
+.user-details {
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.user-verified {
+    color: #04a3ee;
+    padding-left: 4px;
+    font-size: large;
+}
+
+.user-pro {
+    background-color: #5d5df5;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 4px;
+    color: #ffff;
+    font-size: 70%;
+}

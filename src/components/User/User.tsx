@@ -1,5 +1,6 @@
 import React from "react";
-import Icon from "../Icon/Icon";
+import Icon from "../Icon/Icon.tsx";
+import UserDetails from "../UserDetails/UserDetails.tsx";
 import "./User.css"
 
 export interface User {
@@ -21,7 +22,7 @@ const Profile = (props: {user: User}) => {
             <Icon picture={user.profilePicture} level={user.level}/>
         </div>
         <div className="profile-text">
-          <div className="profile-name">{user.name}</div>
+          <UserDetails user={user}/>
           <div className="profile-username">@{user.username}</div>
         </div>
     </div>
