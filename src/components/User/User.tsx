@@ -11,6 +11,7 @@ export interface User {
     proUser: boolean;
     level: number;
     uuid: string;
+    registrationDate: Date;
 }
 
 const Profile = (props: {user: User}) => {

@@ -10,6 +10,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 7,
         uuid: "2A9FBCD3476E81D5",
+        registrationDate: new Date(2023, 1, 15),
     },
     {
         name: "Emily Smith",
@@ -19,6 +20,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 5,
         uuid: "5FED29A1C846B70E",
+        registrationDate: new Date(2023, 2, 10),
     },
     {
         name: "David Johnson",
@@ -28,6 +30,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 8,
         uuid: "A87C10EFB64392D5",
+        registrationDate: new Date(2023, 3, 5),
     },
     {
         name: "Sophia Davis",
@@ -37,6 +40,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 3,
         uuid: "349A1DFE2B6C708D",
+        registrationDate: new Date(2023, 4, 20),
     },
     {
         name: "Robert Brown",
@@ -46,6 +50,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 9,
         uuid: "1D82C70B9EF46A3A",
+        registrationDate: new Date(2023, 5, 8),
     },
     {
         name: "Emma Wilson",
@@ -55,6 +60,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 6,
         uuid: "F87A3CDB96201E4F",
+        registrationDate: new Date(2023, 6, 15),
     },
     {
         name: "Michael Lee",
@@ -64,6 +70,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 4,
         uuid: "6E841D9F70BC2A3C",
+        registrationDate: new Date(2023, 7, 11),
     },
     {
         name: "Olivia Anderson",
@@ -73,6 +80,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 7,
         uuid: "D38A1B429E7C6F05",
+        registrationDate: new Date(2023, 8, 3),
     },
     {
         name: "William Baker",
@@ -82,6 +90,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 10,
         uuid: "4785E9C21D0B3FA6",
+        registrationDate: new Date(2023, 9, 19),
     },
     {
         name: "Ava Taylor",
@@ -91,6 +100,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 2,
         uuid: "9A6FB8D24C71E503",
+        registrationDate: new Date(2023, 10, 25),
     },
     {
         name: "James Clark",
@@ -100,6 +110,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 6,
         uuid: "70C58ED1BFA92D34",
+        registrationDate: new Date(2023, 11, 7),
     },
     {
         name: "Mia Hall",
@@ -109,6 +120,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 4,
         uuid: "FDE76A0C218B5D39",
+        registrationDate: new Date(2024, 0, 12),
     },
     {
         name: "Ethan Martin",
@@ -118,6 +130,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 8,
         uuid: "B5D1E76A90C23F48",
+        registrationDate: new Date(2024, 1, 28),
     },
     {
         name: "Isabella White",
@@ -127,6 +140,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 3,
         uuid: "2B6C8D49F170AED3",
+        registrationDate: new Date(2024, 2, 6),
     },
     {
         name: "Liam Harris",
@@ -136,6 +150,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 5,
         uuid: "C08B7A2F4D1E9653",
+        registrationDate: new Date(2024, 3, 18),
     },
     {
         name: "Aiden Turner",
@@ -145,6 +160,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 9,
         uuid: "78D61A2B4C9F0E5A",
+        registrationDate: new Date(2024, 4, 30),
     },
     {
         name: "Lily Thomas",
@@ -154,6 +170,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 5,
         uuid: "E451FA78C92D603B",
+        registrationDate: new Date(2023, 10, 5),
     },
     {
         name: "Jackson Moore",
@@ -163,6 +180,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 3,
         uuid: "9C61F53D0E782BA4",
+        registrationDate: new Date(2023, 11, 14),
     },
     {
         name: "Charlotte King",
@@ -172,6 +190,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 7,
         uuid: "2B6A71C9D5E0F384",
+        registrationDate: new Date(2024, 0, 23),
     },
     {
         name: "Lucas Adams",
@@ -181,6 +200,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 8,
         uuid: "51EF7A92B46D30C8",
+        registrationDate: new Date(2024, 1, 9),
     },
     {
         name: "Grace Roberts",
@@ -190,6 +210,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 6,
         uuid: "0F6C82D7A149B5E3",
+        registrationDate: new Date(2024, 2, 18),
     },
     {
         name: "Henry White",
@@ -199,6 +220,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 2,
         uuid: "E7A1FC695D03B428",
+        registrationDate: new Date(2024, 3, 3),
     },
     {
         name: "Aria Turner",
@@ -208,6 +230,7 @@ export const sampleUsers: User[] = [
         proUser: false,
         level: 4,
         uuid: "A2E8D1F5C03B7946",
+        registrationDate: new Date(2024, 4, 15),
     },
     {
         name: "Alexander Parker",
@@ -217,6 +240,7 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 9,
         uuid: "6C7E0F4D2195B83A",
+        registrationDate: new Date(2024, 5, 27),
     },
     {
         name: "Sofia Scott",
@@ -226,5 +250,6 @@ export const sampleUsers: User[] = [
         proUser: true,
         level: 5,
         uuid: "D1E3057C9426B8FA",
+        registrationDate: new Date(2024, 6, 6),
     },
 ];
