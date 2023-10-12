@@ -81,7 +81,7 @@ export const sampleGroups: Group[] = [
     },
     {
         name: "Film Buffs",
-        picture: "images/group/groupPic2.png",
+        picture: "images/group/groupPic4.png",
         members: 11,
         public: false,
         uuid: "5D1E7F8A30B249C6",

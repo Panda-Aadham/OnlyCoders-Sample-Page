@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Group from "../../../../components/Group/Group";
+import GroupDisplay , { Group } from "../../../../components/Group/Group.tsx";
+import { sampleGroups } from "../../../../sampleData/groupData.tsx"
 import "./Groups.css";
 
 const group = {
@@ -13,16 +14,19 @@ const group = {
 
 // Custom component for "Popular Groups" section of feed
 const Groups = () => {
+    const getPopularGroups = (groups: Group[]) => {
+        const sortedGroups = groups.sort((a, b) => b.members - a.members);
+        return sortedGroups.slice(0, 5);
+    }
+
+    const popularGroups = getPopularGroups(sampleGroups);
+
     return(
     <Card className="groups-card">
         <Card.Body className="groups-card-title">
             <Card.Title className="groups-title">Popular Groups</Card.Title>
         </Card.Body>
-        <Group group={group}/>
-        <Group group={group}/>
-        <Group group={group}/>
-        <Group group={group}/>
-        <Group group={group}/>
+        {popularGroups.map((group) => <GroupDisplay group={group}/>)}
     </Card>
     )
 }
