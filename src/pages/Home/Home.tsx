@@ -6,7 +6,6 @@ import Newsfeed from "./Newsfeed/Newsfeed.tsx"
 import "./Home.css"
 
 const Home = () => {
-    
     return (
     <div className="home-container">
       <Navbar />

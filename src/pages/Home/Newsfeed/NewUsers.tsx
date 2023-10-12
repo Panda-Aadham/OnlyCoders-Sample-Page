@@ -1,18 +1,30 @@
 import React from "react";
-import { Card, ListGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import Profile from "../../../components/User/User";
 import "./NewUsers.css"
 
+// Custom component for newest members section of feed
 const NewUsers = () => {
+    const user = {
+        name: "Adam Ahmad",
+        username: "FredJamalIII",
+        profilePicture: process.env.PUBLIC_URL + '/images/profile.png',
+        verified: true,
+        proUser: true,
+        level: 6,
+        uuid: "12388b30-3547-4ba7-bbc6-ca321f52cb51"
+    }
+
     return (
     <Card className="nu-card">
-      <Card.Body>
-        <Card.Title style={{fontSize: "2vh"}}>Newest Members</Card.Title>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-      </ListGroup>
+        <Card.Body className="nu-card-title">
+            <Card.Title className="nu-title" style={{fontSize: "2vh"}}>Newest Members</Card.Title>
+        </Card.Body>
+        <Profile user={user}/>
+        <Profile user={user}/>
+        <Profile user={user}/>
+        <Profile user={user}/>
+        <Profile user={user}/>
     </Card>
     )
 }
