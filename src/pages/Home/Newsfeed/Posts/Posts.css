@@ -1,0 +1,44 @@
+.posts-container {
+    font-family: 'Signika Negative', sans-serif;
+    height: 80vh;
+}
+
+.posts-filter {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(6, 6, 6, 0.05);
+}
+
+.posts-heading {
+    display: flex;
+    height: 100%;
+    margin-left: 5%;
+    align-items: center;
+    font-weight: bold;
+    font-size: 80%;
+    border-bottom: 4px solid #00d2e0; 
+}
+
+.posts-autocomplete {
+    width: 30%;
+    padding: 0;
+}
+
+div.MuiOutlinedInput-root {
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+    padding-right: 5px;
+    border-radius: 13px;
+    font-size: 80%;
+}
+
+.MuiAutocomplete-hasPopupIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root {
+    padding-block: 5px;
+    width: 85%;
+}

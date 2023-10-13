@@ -22,6 +22,7 @@
 }
   
 .group-text { 
+    width: 60%;
     font-family: 'Signika Negative', sans-serif;
     padding: 10px;
 }

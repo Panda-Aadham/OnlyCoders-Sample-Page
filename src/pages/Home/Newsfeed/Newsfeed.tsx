@@ -1,8 +1,9 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import "./Newsfeed.css"
 import NewUsers from "./NewUsers/NewUsers";
 import Groups from "./Groups/Groups";
+import Posts from "./Posts/Posts";
+import "./Newsfeed.css"
 
 const Newsfeed = () => {
     return(
@@ -17,7 +18,8 @@ const Newsfeed = () => {
                         {/* <div className="box red">Red Box</div> */}
                     </Col>
                     <Col className="col-md-6">
-                        <div className="box green">Green Box</div>
+                        <Posts/>
+                        {/* <div className="box green">Green Box</div> */}
                     </Col>
                     <Col className="col-md-3">
                         <Groups/>
