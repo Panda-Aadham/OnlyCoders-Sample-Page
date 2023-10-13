@@ -1,0 +1,23 @@
+.post-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(6, 6, 6, 0.05);
+    padding-block-end: 10px;
+}
+
+.post-card-title {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.post-user-icon {
+    width: 8%;
+    margin-left: 2%;
+}
+
+.post-title {
+    margin-left: 4%;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+}

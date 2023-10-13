@@ -1,4 +1,6 @@
 .user-details {
+    display: flex;
+    justify-content: center;
     font-family: 'Signika Negative', sans-serif;
     font-weight: bold;
     font-size: 0.9vw;
@@ -11,10 +13,5 @@
 }
 
 .user-pro {
-    background-color: #5d5df5;
-    width: fit-content;
-    padding: 3px;
-    border-radius: 5%;
-    color: #ffff;
-    font-size: 0.8vw;
+    margin-left: 3px;
 }

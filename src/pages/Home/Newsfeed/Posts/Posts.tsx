@@ -1,6 +1,7 @@
 import React from "react";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
+import Post from "../../../../components/Post/Post";
 import "./Posts.css";
 
 const Posts = () => {
@@ -35,6 +36,7 @@ const Posts = () => {
                     }
                 />
             </div>
+            <Post/>
         </div>
     )
 }

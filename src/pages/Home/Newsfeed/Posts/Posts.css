@@ -13,6 +13,7 @@
     background-color: #ffff;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(6, 6, 6, 0.05);
+    margin-bottom: 3vh;
 }
 
 .posts-heading {
@@ -41,4 +42,9 @@ div.MuiOutlinedInput-root {
 .MuiAutocomplete-hasPopupIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root {
     padding-block: 5px;
     width: 85%;
+}
+
+.posts-post {
+    height: 20vh;
+    background-color: #ffff;
 }

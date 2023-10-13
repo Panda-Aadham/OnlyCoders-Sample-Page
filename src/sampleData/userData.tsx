@@ -223,8 +223,8 @@ export const sampleUsers: User[] = [
         registrationDate: new Date(2024, 3, 3),
     },
     {
-        name: "Aria Turner",
-        username: "aria.t",
+        name: "Aria Davis",
+        username: "aria.d",
         profilePicture: "/images/user/profile5.png",
         verified: false,
         proUser: false,
