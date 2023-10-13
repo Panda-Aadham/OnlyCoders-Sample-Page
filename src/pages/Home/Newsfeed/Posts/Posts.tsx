@@ -1,13 +1,35 @@
 import React from "react";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import Post from "../../../../components/Post/Post";
+import Post, { PostType } from "../../../../components/Post/Post";
 import "./Posts.css";
+
+const examplePost1: PostType = {
+    user: "2B6A71C9D5E0F384",
+    type: "reply",
+    content: "Hello everyone! This is an example post.",
+    datePosted: new Date(Date.now() - 31536000000),
+    commentCount: 12,
+    shareCount: 4,
+    replyTopicForum: ["Harry Potter is all-time biggest series in the world","Book Club Forum"]
+}
+
+const examplePost2: PostType = {
+    user: "2A9FBCD3476E81D5",
+    type: "reply",
+    content: "Nature photos are cool!",
+    datePosted: new Date(Date.now() - 257200),
+    commentCount: 4,
+    shareCount: 0,
+    replyTopicForum: ["Nature photos","Photography Enthusiasts Forum"]
+}
 
 const Posts = () => {
     const options = ['Everything', 'Most recent', 'Popular'];
     const [value, setValue] = React.useState<string>(options[0]);
     const [inputValue, setInputValue] = React.useState('');
+
+    const posts = [examplePost1, examplePost2]
 
     return(
         <div className="posts-container">
@@ -36,7 +58,10 @@ const Posts = () => {
                     }
                 />
             </div>
-            <Post/>
+            {posts.map((post) => 
+            <div className="posts-post">
+                <Post post={post}/>
+            </div>)}
         </div>
     )
 }

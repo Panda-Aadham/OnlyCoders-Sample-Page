@@ -45,6 +45,5 @@ div.MuiOutlinedInput-root {
 }
 
 .posts-post {
-    height: 20vh;
-    background-color: #ffff;
+    margin-bottom: 3vh;
 }

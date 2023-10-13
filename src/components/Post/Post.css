@@ -13,15 +13,13 @@
 .post-user-icon {
     width: 10%;
     height: 100%;
-    margin-left: 2%;
 }
 
-.post-title {
+.post-title-container {
     max-width: 80%;
     flex-shrink: 0;
     font-family: 'Signika Negative', sans-serif;
     font-size: 2vh;
-    font-weight: bold;
     margin-top: 4px;
     margin-left: 10px;
 }
@@ -35,4 +33,29 @@
 .title-text {
     flex: 1;
     font-size: 0.91vw;
+}
+
+.post-date {
+    font-size: 0.75vw;
+}
+
+.post-content {
+    margin-inline: 4%;
+    font-size: 0.85vw;
+    padding-bottom: 5%;
+    border-bottom: 2px solid #dddfe9;
+}
+
+.post-responses {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    margin-top: 10px;
+    font-size: 0.8vw;
+    font-weight: bold;
+    gap: 2%;
+}
+
+.post-response {
+    margin: 0;
 }
