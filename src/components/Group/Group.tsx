@@ -12,6 +12,7 @@ export interface Group {
     uuid: string;
 }
 
+// Component for displaying group details
 const GroupDisplay = (props: {group: Group}) => {
     const {group} = props;
 

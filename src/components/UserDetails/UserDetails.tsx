@@ -4,6 +4,7 @@ import { User } from "../User/User.tsx";
 import { Badge } from "react-bootstrap";
 import "./UserDetails.css"
 
+// Component to display user name and badges (verified + pro member)
 const UserDetails = (props: {user: User}) => {
     const {user} = props
 

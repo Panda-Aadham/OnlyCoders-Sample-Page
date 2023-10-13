@@ -1,6 +1,7 @@
 import React from "react";
 import "./Icon.css";
 
+// Component for user/group icons
 const Icon = (props: {picture: string, level?: number}) => {
     const {picture, level} = props;
 

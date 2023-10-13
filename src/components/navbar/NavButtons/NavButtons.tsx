@@ -5,6 +5,7 @@ import { featureItems, moreItems } from "./Dropdown/dropdownItems.tsx";
 import DropdownMenu from "./Dropdown/DropdownMenu.tsx";
 import "./NavButtons.css"
 
+// Displays Navbar buttons - Home, Features, and More
 const NavButtons = () => {
   const [hoverOnFeature, setHoverOnFeature] = useState(false);
   const [hoverOnMore, setHoverOnMore] = useState(false);

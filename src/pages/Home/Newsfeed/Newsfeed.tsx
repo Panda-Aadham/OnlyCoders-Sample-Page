@@ -15,15 +15,12 @@ const Newsfeed = () => {
                 <Row>
                     <Col className="col-md-3">
                         <NewUsers/>
-                        {/* <div className="box red">Red Box</div> */}
                     </Col>
                     <Col className="col-md-6">
                         <Posts/>
-                        {/* <div className="box green">Green Box</div> */}
                     </Col>
                     <Col className="col-md-3">
                         <Groups/>
-                        {/* <div className="box blue">Blue Box</div> */}
                     </Col>
                 </Row>
             </Container>

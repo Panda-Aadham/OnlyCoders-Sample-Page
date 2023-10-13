@@ -14,6 +14,7 @@ export interface User {
     registrationDate: Date;
 }
 
+// Component for user profile, including picture icon + details
 const Profile = (props: {user: User}) => {
     const {user} = props;
 

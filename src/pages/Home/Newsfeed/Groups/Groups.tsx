@@ -4,14 +4,6 @@ import GroupDisplay , { Group } from "../../../../components/Group/Group.tsx";
 import { sampleGroups } from "../../../../sampleData/groupData.tsx"
 import "./Groups.css";
 
-const group = {
-    name: "Street Artists",
-    picture: process.env.PUBLIC_URL + '/images/groupPicture1.png',
-    members: 13,
-    public: true,
-    uuid: "aksdasd"
-}
-
 // Custom component for "Popular Groups" section of feed
 const Groups = () => {
     const getPopularGroups = (groups: Group[]) => {

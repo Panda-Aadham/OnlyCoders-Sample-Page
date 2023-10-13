@@ -4,6 +4,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import Post, { PostType } from "../../../../components/Post/Post";
 import "./Posts.css";
 
+// Example post
 const examplePost1: PostType = {
     user: "2B6A71C9D5E0F384",
     type: "reply",
@@ -14,6 +15,7 @@ const examplePost1: PostType = {
     replyTopicForum: ["Harry Potter is all-time biggest series in the world","Book Club Forum"]
 }
 
+// Example post
 const examplePost2: PostType = {
     user: "2A9FBCD3476E81D5",
     type: "reply",
@@ -24,6 +26,8 @@ const examplePost2: PostType = {
     replyTopicForum: ["Nature photos","Photography Enthusiasts Forum"]
 }
 
+
+// Custom component for the posts column of the feed
 const Posts = () => {
     const options = ['Everything', 'Most recent', 'Popular'];
     const [value, setValue] = React.useState<string>(options[0]);

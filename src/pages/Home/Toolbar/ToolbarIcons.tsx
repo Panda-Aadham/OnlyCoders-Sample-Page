@@ -11,6 +11,7 @@ import {AllInboxOutlined as AllInboxOutlinedIcon,
     StyleOutlined as StyleOutlinedIcon,
 } from '@mui/icons-material';
 
+// Components for the toolbar icons
 export const toolbarIcons = [
     {
         element: <AllInboxOutlinedIcon />,
