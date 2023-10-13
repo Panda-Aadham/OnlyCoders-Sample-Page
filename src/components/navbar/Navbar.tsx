@@ -5,12 +5,18 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import NavButtons from "./NavButtons/NavButtons.tsx";
 import "./Navbar.css";
+import LoginModal from "../LoginModal/LoginModal.tsx";
 
 const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false)
+  const [showLogin, setShowLogin] = useState(false)
   
   const handleClick = () => {
     setOpenMobileMenu(!openMobileMenu)
+  }
+
+  const handleLoginClick = () => {
+    setShowLogin(true);
   }
   
   return (
@@ -30,10 +36,11 @@ const Navbar = () => {
             <Searchbar />
           </div>
           <div className={openMobileMenu ? "nav-login" : "nav-login col-md-2 col-sm-1"}>
-            <Button type="submit" className="nav-login-btn">Login</Button>
+            <Button onClick={handleLoginClick} className="nav-login-btn">Login</Button>
           </div>
         </div>
       </div>
+      <LoginModal show={showLogin} onHide={() => setShowLogin(false)}/>
     </div>
   )
 }
