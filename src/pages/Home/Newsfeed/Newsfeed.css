@@ -40,4 +40,9 @@ Row {
 .blue {
     background-color: blue;
 }
-  
+
+@media screen and (max-width: 960px) {
+    .feed {
+        padding-left: 0;
+    }
+}
