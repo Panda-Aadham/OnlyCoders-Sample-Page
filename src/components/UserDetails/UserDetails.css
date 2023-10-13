@@ -3,7 +3,7 @@
     justify-content: center;
     font-family: 'Signika Negative', sans-serif;
     font-weight: bold;
-    font-size: 0.9vw;
+    font-size: 0.85vw;
 }
 
 .user-verified {
@@ -14,4 +14,12 @@
 
 .user-pro {
     margin-left: 3px;
+}
+
+.css-ptiqhd-MuiSvgIcon-root {
+    height: auto;
+}
+
+.badge {
+    /* --bs-badge-padding-y: 0.3em; */
 }

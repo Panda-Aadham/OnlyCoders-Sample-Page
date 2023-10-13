@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { sampleUsers } from "../../sampleData/userData";
 import UserDetails from "../UserDetails/UserDetails";
@@ -38,7 +38,17 @@ const examplePost: Post = {
 }
 
 const Post = () => {
-    const user = sampleUsers.find((user) => user.uuid == examplePost.user);
+    const post = examplePost;
+    const user = sampleUsers.find((user) => user.uuid == post.user);
+    const [title, setTitle] = useState(post.title);
+
+    useEffect(() => {
+        if (post.type == "reply" && post.replyTopicForum) {
+            setTitle(`replied to the topic ${post.replyTopicForum[0]} in the forum ${post.replyTopicForum[0]} aksjdnasnd ewjdoajido jiawod jiawod jiawojdi oajid oawjd oji`);
+        } else if (post.type == "update") {
+            setTitle("posted an update")
+        }
+    }, [])
 
     return(
         <Card className="post-card">
@@ -47,7 +57,12 @@ const Post = () => {
                     <Icon picture={user?.profilePicture} level={user?.level}/>
                 </div>
                 <Card.Title className="post-title">
-                    <UserDetails user={user}/>
+                    <div className="user-details-container">
+                        <UserDetails user={user} />
+                    </div>
+                    <div className="title-text">
+                        {title}
+                    </div>
                 </Card.Title>
             </Card.Body>}
 

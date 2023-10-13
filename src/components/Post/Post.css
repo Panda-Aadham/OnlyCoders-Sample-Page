@@ -11,13 +11,28 @@
 }
 
 .post-user-icon {
-    width: 8%;
+    width: 10%;
+    height: 100%;
     margin-left: 2%;
 }
 
 .post-title {
-    margin-left: 4%;
+    max-width: 80%;
+    flex-shrink: 0;
     font-family: 'Signika Negative', sans-serif;
     font-size: 2vh;
     font-weight: bold;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.user-details-container {
+    float: left;
+    margin-right: 5px;
+    display: block;
+}
+
+.title-text {
+    flex: 1;
+    font-size: 0.91vw;
 }
