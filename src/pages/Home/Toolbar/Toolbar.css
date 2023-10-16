@@ -40,7 +40,7 @@
     box-shadow: 0px 4px 6px rgba(25, 128, 202, 0.35); 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .tool-bar {
         flex-direction: row;
         bottom: 0vh;
