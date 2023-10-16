@@ -8,7 +8,9 @@ import "./Navbar.css";
 import LoginModal from "../LoginModal/LoginModal.tsx";
 
 const Navbar = () => {
+  // State for opening dropdown nav menu
   const [openMobileMenu, setOpenMobileMenu] = useState(false)
+  // State for opening login modal
   const [showLogin, setShowLogin] = useState(false)
   
   const handleClick = () => {

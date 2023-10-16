@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './DropdownMenu.css';
 
+// Component for navbar button dropdown
 const DropdownMenu = (props: {isOpen: boolean, elements: {path: string, title: string}[]}) => {
   const {isOpen, elements} = props;
-
 
   return (
     <ul className='dropdown-menu' >

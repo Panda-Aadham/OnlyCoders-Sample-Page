@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import './Searchbar.css'
 
+// Component for searchbar
 const Searchbar = () => {
     const [searchValue, setSearchValue] = useState('');
 
+    // Skeleton implementation
     const handleSearch = () => {
     };
 

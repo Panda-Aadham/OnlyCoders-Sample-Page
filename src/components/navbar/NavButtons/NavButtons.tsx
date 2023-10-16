@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { featureItems, moreItems } from "./Dropdown/dropdownItems.tsx";
 import DropdownMenu from "./Dropdown/DropdownMenu.tsx";
 import "./NavButtons.css"
 
+// Titles and paths for the "Feature" & "More" dropdown items 
+import { featureItems, moreItems } from "./Dropdown/dropdownItems.tsx";
+
 // Displays Navbar buttons - Home, Features, and More
 const NavButtons = () => {
+  // States for showing the dropdowns respectively
   const [hoverOnFeature, setHoverOnFeature] = useState(false);
   const [hoverOnMore, setHoverOnMore] = useState(false);
 

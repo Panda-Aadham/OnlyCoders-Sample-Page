@@ -20,6 +20,8 @@ export interface PostType {
 
 const Post = (props: {post: PostType}) => {
     const {post} = props;
+
+    // Get the posts user data
     const user = sampleUsers.find((user) => user.uuid == post.user);
     const [postDate, setPostDate] = useState("");
 
