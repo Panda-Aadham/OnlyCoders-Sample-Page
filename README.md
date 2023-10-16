@@ -4,7 +4,9 @@ Main component Navbar.tsx - first attempted integration of Bootstraps custom sty
 The Features and More use another component DropdownMenu.tsx which displays the dropdowns for both respectively. The items for the dropdown, including the titles and redirect paths are passed as props into
 <DropdownMenu/>. There is also a seperate component for the searchbar, Searchbar.tsx.
 
+
 Home page:
+
 The home page, Home.tsx, has two main sections - the toolbar which is on the left margin of the screen with several buttons. This can be found in Toolbar.tsx. And the newsfeed which is the main body and content of the page. Can be
 found in Newsfeed.tsx.
 
